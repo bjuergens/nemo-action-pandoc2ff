@@ -8,14 +8,22 @@ It adds a "pandoc2ff" to the contextmenu for folders and md-files. When you clic
 
 ## installing
 
-### nemo
+### requirements
+
+the following packages must be installed to use the extention: nemo, pandoc, firefox
+
+on ubuntu do:
+
+    sudo apt install pandoc firefox
+
+### install
 
     chmod +x install-nemo.sh
     ./install-nemo.sh
 
 ## troubleshooting
 
-Ausgabe von nemo anschauen
+show nemo's action-log
 
     nemo --quit
     env NEMO_ACTION_VERBOSE=1 nemo

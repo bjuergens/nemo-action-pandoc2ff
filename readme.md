@@ -18,8 +18,9 @@ on ubuntu do:
 
 ### install
 
-    chmod +x install-nemo.sh
-    ./install-nemo.sh
+    git clone git@github.com:wotanii/nemo-action-pandoc2ff.git
+    chmod +x nemo-action-pandoc2ff/install-nemo.sh
+    ./nemo-action-pandoc2ff/install-nemo.sh
 
 ## troubleshooting
 

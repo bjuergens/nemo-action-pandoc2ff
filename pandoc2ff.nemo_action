@@ -1,0 +1,10 @@
+[Nemo Action]
+Active=true
+Name=pandoc to firefoxaaa
+Comment=compiles a markdown file to html via pandoc and shows the result in firefox
+Exec=<pandoc2ff/pandoc2ff.sh %F>
+Selection=S
+Extensions=dir;md
+Quote=double
+Dependencies=pandoc;firefox;
+Terminal=true

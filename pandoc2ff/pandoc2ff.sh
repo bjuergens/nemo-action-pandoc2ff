@@ -4,7 +4,7 @@ TARGET="$*"
 BASEDIR=$(dirname ${BASH_SOURCE[0]})"/"
 OUTFILE=$(mktemp -d -t)"/o.html"
 CSSFILE=$BASEDIR"pandoc.css"
-PANDOCCMD="pandoc --mathjax --smart --standalone --normalize --self-contained --write=html5 --latex-engine=xelatex -f markdown --table-of-contents -o $OUTFILE --css $CSSFILE"
+PANDOCCMD="pandoc --mathjax --standalone --self-contained --write=html5  -f markdown --table-of-contents -o $OUTFILE --css $CSSFILE"
 
 if [ -d "$TARGET" ]; then
   cd  "$TARGET"
